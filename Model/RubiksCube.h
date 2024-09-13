@@ -1,5 +1,5 @@
 //
-// Created by Shubham Patil on 17/12/21.
+// Created by Sukhendu Patra.
 //
 
 #ifndef RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H
@@ -16,9 +16,11 @@ using namespace std;
  * We'll benchmark all models and observe which one is better for performance.
  */
 
-class RubiksCube {
+class RubiksCube
+{
 public:
-    enum class FACE {
+    enum class FACE
+    {
         UP,
         LEFT,
         FRONT,
@@ -27,7 +29,8 @@ public:
         DOWN
     };
 
-    enum class COLOR {
+    enum class COLOR
+    {
         WHITE,
         GREEN,
         RED,
@@ -36,13 +39,26 @@ public:
         YELLOW
     };
 
-    enum class MOVE {
-        L, LPRIME, L2,
-        R, RPRIME, R2,
-        U, UPRIME, U2,
-        D, DPRIME, D2,
-        F, FPRIME, F2,
-        B, BPRIME, B2
+    enum class MOVE
+    {
+        L,
+        LPRIME,
+        L2,
+        R,
+        RPRIME,
+        R2,
+        U,
+        UPRIME,
+        U2,
+        D,
+        DPRIME,
+        D2,
+        F,
+        FPRIME,
+        F2,
+        B,
+        BPRIME,
+        B2
     };
 
     /*
@@ -183,5 +199,4 @@ public:
     uint8_t getCornerOrientation(uint8_t ind) const;
 };
 
-
-#endif //RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H
+#endif // RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H

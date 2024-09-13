@@ -1,6 +1,3 @@
-//
-// Created by Lakshya Mittal on 19-02-2022.
-//
 
 #include "math.h"
 
@@ -20,6 +17,6 @@ uint32_t pick(uint32_t n, uint32_t k)
 uint32_t choose(uint32_t n, uint32_t k)
 {
     return (n < k)
-           ? 0
-           : factorial(n) / (factorial(n - k) * factorial(k));
+               ? 0
+               : factorial(n) / (factorial(n - k) * factorial(k));
 }

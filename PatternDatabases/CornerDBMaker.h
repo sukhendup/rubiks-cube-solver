@@ -1,6 +1,4 @@
-//
-// Created by Lakshya Mittal on 18-02-2022.
-//
+
 
 #ifndef RUBIKS_CUBE_SOLVER_CORNERDBMAKER_H
 #define RUBIKS_CUBE_SOLVER_CORNERDBMAKER_H
@@ -9,7 +7,8 @@
 
 using namespace std;
 
-class CornerDBMaker {
+class CornerDBMaker
+{
 private:
     string fileName;
     CornerPatternDatabase cornerDB;
@@ -21,5 +20,4 @@ public:
     bool bfsAndStore();
 };
 
-
-#endif //RUBIKS_CUBE_SOLVER_CORNERDBMAKER_H
+#endif // RUBIKS_CUBE_SOLVER_CORNERDBMAKER_H
